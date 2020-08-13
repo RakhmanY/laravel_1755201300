@@ -23,7 +23,7 @@ class CreateFailedJobsTable extends Migration
         });
     }
 
-    /**
+    /*
      * Reverse the migrations.
      *
      * @return void
