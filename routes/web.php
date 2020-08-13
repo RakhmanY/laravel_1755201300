@@ -14,13 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    return "Ello";
+    return view('welcome');
+    // return "Ello";
 });
 
 Route::get('mhs', 'MahasiswaController@index');
-
-Route::get('product', 'ProductController@index' );
-
-Route::get('mhs', 'MahasiswaController@index' );
+Route::get('/mhs_list', 'MahasiswaController@mhs_list')->name('mhs_list');
 
